@@ -7,30 +7,105 @@ class MyFirstApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.white,
         appBar: AppBar(
           centerTitle: true,
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.arrow_back_ios_sharp),
-            color: Colors.black,
-          ),
-          backgroundColor: Colors.white,
           title: const Text(
-            "First Screen of My app",
+            "First screen of my app",
             style: TextStyle(color: Colors.black),
           ),
         ),
-        body: Container(
-          decoration: const BoxDecoration(
-            color: Colors.grey,
-            borderRadius: BorderRadius.all(Radius.circular(20)),
-          ),
-          child: const Center(
-            child: Text(
-              "Hello from hot reload",
-              style: TextStyle(fontSize: 18, color: Colors.black),
-            ),
+        body: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                children: [
+                  Container(
+                    width: 80,
+                    height: 80,
+                    color: Colors.red,
+                    child: const Center(
+                      child: Text("1", textAlign: TextAlign.center),
+                    ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                    child: const Center(
+                      child: Text("2"),
+                    ),
+                  ),
+                  Container(
+                    width: 120,
+                    height: 120,
+                    color: Colors.green,
+                    child: const Center(
+                      child: Text("3"),
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 80,
+                    height: 80,
+                    color: Colors.red,
+                    child: const Center(
+                      child: Text("1", textAlign: TextAlign.center),
+                    ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                    child: const Center(
+                      child: Text("2"),
+                    ),
+                  ),
+                  Container(
+                    width: 120,
+                    height: 120,
+                    color: Colors.green,
+                    child: const Center(
+                      child: Text("3"),
+                    ),
+                  ),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    width: 80,
+                    height: 80,
+                    color: Colors.red,
+                    child: const Center(
+                      child: Text("1", textAlign: TextAlign.center),
+                    ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                    child: const Center(
+                      child: Text("2"),
+                    ),
+                  ),
+                  Container(
+                    width: 120,
+                    height: 120,
+                    color: Colors.green,
+                    child: const Center(
+                      child: Text("3"),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
